@@ -1,5 +1,5 @@
 import './Intro.style.css';
-import TypeWriter from '../TypeWriter/TypeWriter';
+import { Typewriter } from 'react-simple-typewriter';
 
 /**
  * Component that takes in a name and tag line, and animates in typing way
@@ -8,8 +8,15 @@ import TypeWriter from '../TypeWriter/TypeWriter';
 function Intro() {
     return(
         <div>
-            <div>
-                <TypeWriter></TypeWriter>
+            <div className='intro-heading'>
+                <Typewriter 
+                    words={['H', 'Ha', 'Has', 'Hasa', 'Hasam']}
+                    loop
+                    cursor
+                    cursorStyle='|'
+                    typeSpeed={70}
+                    deleteSpeed={50}
+                />
             </div>
             <div>
                 <h2 className="intro-subheading">I am a software engineer</h2>
