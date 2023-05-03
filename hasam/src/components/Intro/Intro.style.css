@@ -7,3 +7,23 @@
     font-size: 50px;
     font-weight: 100;
 }
+
+.head-shot { 
+    display: 'inline-block';
+    width: 100%;
+    text-align: 'center';
+}
+
+/* //display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' */
+.head-shot-paper-div {
+    display: 'flex';
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+  
