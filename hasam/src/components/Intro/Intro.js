@@ -10,16 +10,26 @@ function Intro() {
         <div>
             <div className='intro-heading'>
                 <Typewriter 
-                    words={['H', 'Ha', 'Has', 'Hasa', 'Hasam']}
+                    words={['Hasam.']}
                     loop
                     cursor
-                    cursorStyle='|'
+                    cursorStyle=' '
                     typeSpeed={70}
                     deleteSpeed={50}
+                    delaySpeed={30000}
                 />
             </div>
             <div>
-                <h2 className="intro-subheading">I am a software engineer</h2>
+                <div className="intro-subheading">
+                    <Typewriter 
+                        words={['Hello!', ' नमस्ते', 'Bonjour!', 'Hola!', 'Ciao!', 'مرحبا', 'Slaw!', 'こんにちは', 'Привет' ]}
+                        loop
+                        cursor
+                        cursorStyle='|'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                    />
+                </div>
             </div>
         </div>
     );
