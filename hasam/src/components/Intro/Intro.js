@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import headshot from './reactHeadshot.jpg';
 import { Grid, Paper } from '@mui/material';
 
-function Intro() {
+function Intro() { //lol
     return(
         <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
