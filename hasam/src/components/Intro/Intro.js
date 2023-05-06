@@ -5,19 +5,19 @@ import { Grid, Paper } from '@mui/material';
 
 function Intro() { //lol
     return(
-        <Grid container spacing={4}>
-            <Grid item xs={12} md={6}>
+        <Grid container spacing={2}>
+        <Grid item xs={6}>
+        <Grid container spacing={2}>
+            <Grid item xs={12} className='intro-heading'>
                 <Typewriter 
-                        words={['Hasam.']}
-                        loop
-                        cursor
-                        cursorStyle=' '
-                        typeSpeed={70}
-                        deleteSpeed={50}
-                        delaySpeed={30000}
-                    />
-                
-                    <Typewriter 
+                            words={['Hasam.']}
+                            cursor
+                            cursorStyle=' '
+                            typeSpeed={70}
+                        />
+            </Grid>
+            <Grid item xs={12} className='intro-subheading'>
+                <Typewriter 
                         words={['Hello!', 'नमस्ते', 'Bonjour!', 'Hola!', 'Ciao!', 'مرحبا', 'Slaw!', 'こんにちは', 'Привет' ]}
                         loop
                         cursor
@@ -26,17 +26,12 @@ function Intro() { //lol
                         deleteSpeed={50}
                     />
             </Grid>
-            <Grid item xs={12} md={6}>
-                <div className='head-shot-paper-div'>
-                    <Paper elevation={3} className='head-shot'>
-                        <img
-                        src={headshot}
-                        alt="me"
-                        />
-                    </Paper>
-                </div>
-            </Grid>
         </Grid>
+        </Grid>
+        <Grid item xs={6}>
+            <img src={headshot} alt="me"/>
+        </Grid>
+      </Grid>
     );
 }
 

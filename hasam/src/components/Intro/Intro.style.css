@@ -1,29 +1,25 @@
 .intro-heading {
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 600;
 }
 
 .intro-subheading {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 100;
 }
 
-.head-shot { 
-    display: 'inline-block';
-    width: 100%;
-    text-align: 'center';
-}
-
-/* //display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' */
-.head-shot-paper-div {
-    display: 'flex';
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
 
 img {
     max-width: 50%;
-    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.paper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
 }
   

@@ -24,6 +24,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Navigation />
+        <br></br>
+        <br></br>
         <Intro />
       </div>
     </ThemeProvider>
